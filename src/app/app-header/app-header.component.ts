@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.sass']
 })
 export class AppHeaderComponent implements OnInit {
-
+  title = "Deflandre Vincent"
   constructor() { }
 
   ngOnInit() {
