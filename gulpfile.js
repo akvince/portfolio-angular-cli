@@ -2,6 +2,13 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const concatCss = require('gulp-concat-css');
+
+gulp.task('concatCss', function () {
+  return gulp.src('./src/assets/**/*.css')
+    .pipe(concatCss("./styles.css"))
+    .pipe(gulp.dest('./src'));
+});
 
 gulp.task('sass', function () {
   return gulp.src('./src/app/**/*.sass')
