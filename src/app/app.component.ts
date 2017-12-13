@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.sass']
 })
 export class AppComponent {
-  title = 'app';
+
 }
