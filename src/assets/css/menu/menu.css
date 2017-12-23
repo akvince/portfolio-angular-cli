@@ -67,6 +67,9 @@ menu {
     font-size: 2em;
     margin-bottom: 10px; }
 
+.example-container {
+  width: 200px; }
+
 @media screen and (min-width: 991px) {
   .menu-burger {
     left: 30px; } }

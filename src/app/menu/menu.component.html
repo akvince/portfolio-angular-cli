@@ -1,5 +1,30 @@
-<menu>
+<mat-sidenav-container id="menu">
+  <mat-sidenav
+    #sidenav
+    mode="over"
+    opened="false"
+    [fixedInViewport]="true"
+    [fixedTopGap]="0"
+    [fixedBottomGap]="0"
+  >
+      <div mat-button (click)="sidenav.toggle()" class="menu-burger">
+          <span class="menu-burger-item menu-burger-top active"></span>
+          <span class="menu-burger-item menu-burger-middle active"></span>
+          <span class="menu-burger-item menu-burger-bottom active"></span>
+      </div>
     <ul class="menu-list">
-        <li *ngFor="let nameMenuElement of elementsMenu" class="menu-list-element">{{nameMenuElement}}</li>
+      <li class="menu-list-element">home</li>
+      <li class="menu-list-element">text</li>
+      <li class="menu-list-element">Contact</li>
     </ul>
-</menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <div mat-button (click)="sidenav.toggle()" class="menu-burger">
+          <span class="menu-burger-item menu-burger-top"></span>
+          <span class="menu-burger-item menu-burger-middle"></span>
+          <span class="menu-burger-item menu-burger-bottom"></span>
+      </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
