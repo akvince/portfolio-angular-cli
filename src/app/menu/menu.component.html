@@ -13,9 +13,7 @@
           <span class="menu-burger-item menu-burger-bottom active"></span>
       </div>
     <ul class="menu-list">
-      <li class="menu-list-element">home</li>
-      <li class="menu-list-element">text</li>
-      <li class="menu-list-element">Contact</li>
+      <li *ngFor="let item of menu.itemMenu" class="menu-list-element">{{item}}</li>
     </ul>
   </mat-sidenav>
 

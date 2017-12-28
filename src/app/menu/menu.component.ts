@@ -8,6 +8,10 @@ import {FormControl} from '@angular/forms';
 })
 
 export class MenuComponent implements OnInit {
+  menu ={
+    itemMenu : ['Home', 'Projet', 'Contact']
+  }
+
   mode = new FormControl('over');
 
   elementsMenu = ['Home', 'Contact'];
