@@ -9,12 +9,28 @@ import {FormControl} from '@angular/forms';
 
 export class MenuComponent implements OnInit {
   menu ={
-    itemMenu : ['Home', 'Projet', 'Contact']
+    itemMenu : [
+      {
+        name: 'Home',
+        url: '/presentation'
+      },
+      {
+        name: 'Projet',
+        url: '/project'
+      },
+      {
+        name: 'CV',
+        url: '/curriculumvitae'
+      },
+      {
+        name: 'Contact',
+        url: '/contact'
+      }
+    ]
   }
 
   mode = new FormControl('over');
 
-  elementsMenu = ['Home', 'Contact'];
   constructor() { }
 
   ngOnInit() {

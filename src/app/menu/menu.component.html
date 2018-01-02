@@ -13,7 +13,9 @@
           <span class="menu-burger-item menu-burger-bottom active"></span>
       </div>
     <ul class="menu-list">
-      <li *ngFor="let item of menu.itemMenu" class="menu-list-element">{{item}}</li>
+      <li mat-button (click)="sidenav.toggle()" *ngFor="let item of menu.itemMenu" class="menu-list-element">
+        <a class="menu-list-element-link" routerLink="{{item.url}}">{{item.name}}</a>
+      </li>
     </ul>
   </mat-sidenav>
 

@@ -10,8 +10,3 @@ h1 {
   transition: all ease 1s;
   -moz-transition: all ease 1s;
   -webkit-transition: all ease 1s; }
-  h1.active {
-    color: #fff;
-    transition: all ease 1s;
-    -moz-transition: all ease 1s;
-    -webkit-transition: all ease 1s; }

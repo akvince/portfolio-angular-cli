@@ -2,7 +2,6 @@ mat-toolbar {
   position: relative;
   text-align: center;
   height: 70px;
-  z-index: 40;
   transition: all ease 1s;
   -moz-transition: all ease 1s;
   -webkit-transition: all ease 1s;
