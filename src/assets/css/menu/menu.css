@@ -3,12 +3,14 @@
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0;
-  background-color: transparent; }
+  left: 0; }
 
 mat-sidenav {
   width: 100%;
   background-color: #B2EBF2; }
+
+.mat-drawer-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .menu-burger {
   cursor: pointer;
