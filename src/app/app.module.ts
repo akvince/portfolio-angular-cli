@@ -6,6 +6,7 @@ import {MatToolbarModule,MatSidenavModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { MenuComponent } from './menu/menu.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    MenuComponent
+    MenuComponent,
+    PresentationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
