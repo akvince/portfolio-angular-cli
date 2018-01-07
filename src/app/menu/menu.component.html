@@ -7,11 +7,10 @@
     [fixedTopGap]="0"
     [fixedBottomGap]="0"
   >
-      <div mat-button (click)="sidenav.toggle()" class="menu-burger">
-          <span class="menu-burger-item menu-burger-top active"></span>
-          <span class="menu-burger-item menu-burger-middle active"></span>
-          <span class="menu-burger-item menu-burger-bottom active"></span>
-      </div>
+    <div mat-button (click)="sidenav.close()" class="cross">
+        <span class="cross-item cross-1"></span>
+        <span class="cross-item cross-2"></span>
+    </div>
     <ul class="menu-list">
       <li mat-button (click)="sidenav.toggle()" *ngFor="let item of menu.itemMenu" routerLinkActive="menu-list-element-active" class="menu-list-element">
         <a class="menu-list-element-link" routerLink="{{item.url}}">{{item.name}}</a>
@@ -20,11 +19,8 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-      <div mat-button (click)="sidenav.toggle()" class="menu-burger">
-          <span class="menu-burger-item menu-burger-top"></span>
-          <span class="menu-burger-item menu-burger-middle"></span>
-          <span class="menu-burger-item menu-burger-bottom"></span>
-      </div>
-
+        <button (click)="sidenav.toggle()"  mat-button>
+          Menu
+      </button>
   </mat-sidenav-content>
 </mat-sidenav-container>

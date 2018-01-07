@@ -1,3 +1,19 @@
-<p>
-  project works!
-</p>
+<div class="flex">
+  <div *ngFor="let project of projects" class="card-flex card-100-mobile card-50">
+    <mat-card class="project-card">
+      <mat-card-header>
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-subtitle>{{project.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{project.image}}" alt="{{project.altImg}}">
+      <mat-card-content>
+        <p>{{project.description}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+       <button *ngIf="project.urlBool" class="project-button" mat-button>
+         <a href="{{project.url}}" target="_blank">Site {{project.title}}</a>
+       </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
