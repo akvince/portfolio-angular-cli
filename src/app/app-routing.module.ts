@@ -9,7 +9,7 @@ import { ProjectComponent } from './project/project.component';
 
 // routes
 const appRoutes: Routes = [
-  {path: '', redirectTo: 'presentation', pathMatch: 'full'}
+  {path: '', redirectTo: 'presentation', pathMatch: 'full'},
   {path: 'presentation', component: PresentationComponent },
   {path: 'curriculumvitae', component: CurriculumvitaeComponent },
   {path: 'project', component: ProjectComponent },

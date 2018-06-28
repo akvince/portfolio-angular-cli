@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentationComponent implements OnInit {
 
-  const birthdate = new Date().getFullYear() - 1990;
-
   constructor() { }
 
   ngOnInit() {
