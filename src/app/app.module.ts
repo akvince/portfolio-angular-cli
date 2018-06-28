@@ -11,6 +11,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { ContactComponent } from './contact/contact.component';
 import { CurriculumvitaeComponent } from './curriculumvitae/curriculumvitae.component';
 import { ProjectComponent } from './project/project.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { ProjectComponent } from './project/project.component';
     CurriculumvitaeComponent,
     ProjectComponent
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
