@@ -2218,6 +2218,7 @@ h1 {
     width: inherit;
   }
 }
+
 mat-sidenav {
   width: 100%;
   background-color: #B2EBF2;
@@ -2251,12 +2252,14 @@ mat-sidenav {
   transform: rotate(-45deg);
 }
 
-.menu-list {
+/*menu mobile*/
+
+.menu-small-list {
   padding: 20px 0;
   text-align: center;
 }
 
-.menu-list-element {
+.menu-small-list-element {
   cursor: pointer;
   text-transform: uppercase;
   list-style: none;
@@ -2264,27 +2267,37 @@ mat-sidenav {
   margin-bottom: 10px;
 }
 
-.menu-list-element-active {
+.menu-small-list-element-active {
   color: #A3BBAD;
   cursor: default;
 }
 
-.menu-list-element-link {
+.menu-small-list-element-link {
   color: inherit;
   text-decoration: none;
 }
 
-.menu-list-element-link:focus {
+.menu-small-list-element-link:focus {
   outline: inherit;
 }
 
-.menu-list-element-link:hover {
+.menu-small-list-element-link:hover {
   cursor: inherit;
 }
 
+/*menu tablet desktop*/
+
+.menu-large {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  mat-sidenav {
-    width: 320px;
+  .menu-small {
+    display: none;
+  }
+
+  .menu-large {
+    display: none;
   }
 }
 

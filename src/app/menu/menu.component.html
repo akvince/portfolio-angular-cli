@@ -1,4 +1,5 @@
-<mat-sidenav-container id="menu">
+<!-- menu mobile -->
+<mat-sidenav-container class="menu-small" id="menu">
   <mat-sidenav
     #sidenav
     mode="over"
@@ -11,9 +12,9 @@
         <span class="cross-item cross-1"></span>
         <span class="cross-item cross-2"></span>
     </div>
-    <ul class="menu-list">
-      <li mat-button (click)="sidenav.toggle()" *ngFor="let item of menu.itemMenu" routerLinkActive="menu-list-element-active" class="menu-list-element">
-        <a class="menu-list-element-link" routerLink="{{item.url}}">{{item.name}}</a>
+    <ul class="menu-small-list">
+      <li mat-button (click)="sidenav.toggle()" *ngFor="let item of menu.itemMenu" routerLinkActive="menu-small-list-element-active" class="menu-list-element">
+        <a class="menu-small-list-element-link" routerLink="{{item.url}}">{{item.name}}</a>
       </li>
     </ul>
   </mat-sidenav>
@@ -24,3 +25,12 @@
       </button>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<!-- menu table desktop-->
+<menu class="menu-large">
+  <ul class="menu-large-list">
+    <li mat-button *ngFor="let item of menu.itemMenu" routerLinkActive="menu-large-list-element-active" class="menu-large-list-element">
+      <a class="menu-large-list-element-link" routerLink="{{item.url}}">{{item.name}}</a>
+    </li>
+  </ul>
+</menu>
