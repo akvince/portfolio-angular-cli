@@ -1,10 +1,8 @@
 <div class="flex">
   <mat-card class="card-100-mobile">
-    <h1>Curriculum vitae</h1>
-    <h2>2016 - maintenant</h2>
-    <div>
-      <h3>Expert-CEA</h3>
-      <p>environnement Lotus, HTML, CSS, jQuery (mise en forme de la liste des experts par régions et animation en jquery)</p>
+    <h1>{{title}}</h1>
+    <div *ngFor="let skill of skill">
+      <h3>{{skill.name}}</h3>
     </div>
   </mat-card>
 </div>
