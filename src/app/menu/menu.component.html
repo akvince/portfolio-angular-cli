@@ -13,7 +13,7 @@
         <span class="cross-item cross-2"></span>
     </div>
     <ul class="menu-small-list">
-      <li mat-button (click)="sidenav.toggle()" *ngFor="let item of menu.itemMenu" routerLinkActive="menu-small-list-element-active" class="menu-list-element">
+      <li mat-button (click)="sidenav.toggle()" *ngFor="let item of menu.itemMenu" routerLinkActive="menu-small-list-element-active" class="menu-small-list-element">
         <a class="menu-small-list-element-link" routerLink="{{item.url}}">{{item.name}}</a>
       </li>
     </ul>

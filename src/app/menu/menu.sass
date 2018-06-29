@@ -1,6 +1,6 @@
 mat-sidenav
   width: 100%
-  background-color: #B2EBF2
+  background-color: #4fc3f7
 
 .cross
   cursor: pointer
@@ -29,6 +29,7 @@ mat-sidenav
 .menu-small-list
   padding: 20px 0
   text-align: center
+  color: #000
 
   &-element
     cursor: pointer
@@ -38,7 +39,7 @@ mat-sidenav
     margin-bottom: 10px
 
     &-active
-      color: #A3BBAD
+      color: #0093c4
       cursor: default
 
     &-link
@@ -54,7 +55,7 @@ mat-sidenav
 /*menu tablet desktop*/
 .menu-large
   display: none
-  background-color: #b2ebf2
+  background-color: #8bf6ff
   padding: 0
   margin: 0
 
@@ -68,16 +69,18 @@ mat-sidenav
     margin: 0
 
     &-element
-      padding-bottom: 20px
+      padding: 10px 0 8px 0
       list-style: none
+      width: 100px
+      text-align: center
 
       &-link
         text-decoration: none
 
       &-active
-        font-weight: bold
-        color: #A3BBAD
         cursor: default
+        border-bottom: 4px solid #64b5f6
+        border-radius: 2px
 
 @media screen and (min-width: 768px)
   .menu-small
