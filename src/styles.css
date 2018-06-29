@@ -2289,6 +2289,15 @@ mat-sidenav {
 
 .menu-large {
   display: none;
+  background-color: #b2ebf2;
+}
+
+.menu-large-list {
+  padding: 0;
+}
+
+.menu-large-list-element {
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -2297,7 +2306,7 @@ mat-sidenav {
   }
 
   .menu-large {
-    display: none;
+    display: block;
   }
 }
 

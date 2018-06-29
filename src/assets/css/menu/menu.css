@@ -1,6 +1,6 @@
 mat-sidenav {
   width: 100%;
-  background-color: #B2EBF2; }
+  background-color: #4fc3f7; }
 
 .cross {
   cursor: pointer;
@@ -28,7 +28,8 @@ mat-sidenav {
 /*menu mobile*/
 .menu-small-list {
   padding: 20px 0;
-  text-align: center; }
+  text-align: center;
+  color: #000; }
   .menu-small-list-element {
     cursor: pointer;
     text-transform: uppercase;
@@ -36,7 +37,7 @@ mat-sidenav {
     font-size: 2em;
     margin-bottom: 10px; }
     .menu-small-list-element-active {
-      color: #A3BBAD;
+      color: #0093c4;
       cursor: default; }
     .menu-small-list-element-link {
       color: inherit;
@@ -49,11 +50,28 @@ mat-sidenav {
 /*menu tablet desktop*/
 .menu-large {
   display: none;
-  background-color: #b2ebf2; }
+  background-color: #8bf6ff;
+  padding: 0;
+  margin: 0; }
   .menu-large-list {
-    padding: 0; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0; }
     .menu-large-list-element {
-      list-style: none; }
+      padding: 10px 0 8px 0;
+      list-style: none;
+      width: 100px;
+      text-align: center; }
+      .menu-large-list-element-link {
+        text-decoration: none; }
+      .menu-large-list-element-active {
+        cursor: default;
+        border-bottom: 4px solid #64b5f6;
+        border-radius: 2px; }
 
 @media screen and (min-width: 768px) {
   .menu-small {
